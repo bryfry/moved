@@ -49,6 +49,24 @@ sqlite3 moved.db \
       | "redir ", .src, .dst, .status, "\n"'
 ```
 
+#### squarespace sitemap
+
+```bash
+grep "<loc>" source/sitemap.xml \
+  | cut -b 27- \
+  | cut -d "<" -f1 \
+  | xargs -I {} sqlite3 moved.db \
+    'INSERT INTO redir(src) 
+     SELECT x FROM (SELECT "{}" AS x) 
+     WHERE NOT EXISTS(SELECT src FROM redir WHERE src = "{}");'
+```
+
+Get null values back out:
+
+```bash
+sqlite3 moved.db 'select src from redir where dst is NULL' > no_redirect/squarespace.txt
+```
+
 #### google analytics
 
 ```bash
@@ -60,9 +78,10 @@ cut -d ',' -f 1 source/ga.csv \
      WHERE NOT EXISTS(SELECT src FROM redir WHERE src = "{}");'
 ```
 
+Get null values back out:
+
 ```bash
-# get null values back out
-sqlite3 moved.db 'select src from redir where dst is NULL' > no_redirect.txt
+sqlite3 moved.db 'select src from redir where dst is NULL' > no_redirect/ga.txt
 ```
 
 #### google search
@@ -78,7 +97,7 @@ xargs -a source/google_search.txt -I {} \
 Get null values back out:
 
 ```bash
-sqlite3 moved.db 'select src from redir where dst is NULL' > no_redirect.txt
+sqlite3 moved.db 'select src from redir where dst is NULL' > no_redirect/google_search.txt
 ```
 
 #### blog sources
