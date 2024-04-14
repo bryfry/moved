@@ -65,6 +65,7 @@ INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('blog-post','/blog
 INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('blog-post','/blog/unlocking-your-vim-screen','https://blog.alta3.com/topics/linux/unlocking-your-vim-screen/',301);
 INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('blog-post','/blog/vim-introduction-getting-started-with-vim','https://blog.alta3.com/topics/linux/vim-introduction-getting-started-with-vim/',301);
 INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('blog-post','/blog/vimcolorscheme','https://blog.alta3.com/topics/linux/vimcolorscheme/',301);
+INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('blog-post','/blog/adding-spell-checking-as-a-github-action/1000','https://blog.alta3.com/topics/scm-and-pipelines/adding-spell-checking-as-a-github-action/',301);
 
 -- blog tags
 INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('blog-tag','/blog/tag/kubernetes','https://blog.alta3.com/tags/kubernetes/',301);
@@ -829,6 +830,21 @@ INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('poster','/static/
 INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('poster','/static/posters/tmux.pdf','https://static.alta3.com/posters/tmux.pdf',301);
 INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('poster','/static/posters/vim.pdf','https://static.alta3.com/posters/vim.pdf',301);
 INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('poster','/static/posters/yaml.pdf','https://static.alta3.com/posters/yaml.pdf',301);
+INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('poster','/s/SIP-Essentials-Training.pdf','https://static.alta3.com/outlines/sip/sip.pdf',301);
+INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('poster','/s/regex-7dg3.pdf','https://static.alta3.com/outlines/pyb/pyb.pdf',301);
+INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('poster','/s/Python-for-Data-Sciences.pdf','https://static.alta3.com/outlines/py-datasci/py-datasci.pdf',301);
+INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('poster','/s/Python-3-Poster.pdf','https://static.alta3.com/posters/python3.pdf',301);
+INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('poster','/s/python3pkgs-zn97.pdf','https://static.alta3.com/posters/python3pkgs.pdf',301);
+INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('poster','/s/linux-poster.pdf','https://static.alta3.com/courses/5g/info/linux.pdf',301);
+INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('poster','/s/Linux.pdf','https://static.alta3.com/courses/5g/info/linux.pdf',301);
+INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('poster','/s/git-y46g.pdf','https://static.alta3.com/posters/git.pdf',301);
+INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('poster','/s/Ansible-Poster.pdf','https://static.alta3.com/posters/ansible.pdf',301);
+INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('poster','/s/5G-Essentials.pdf','https://static.alta3.com/outlines/5g/5g.pdf',301);
+INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('poster','/s/5G-Acronyms-LS.pdf','https://static.alta3.com/courses/5g/info/5G-Acronyms.pdf',301);
+INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('poster','/posters/python3pkgs.pdf','https://static.alta3.com/posters/python3pkgs.pdf',301);
+INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('poster','/s/yaml-yft4.pdf','https://static.alta3.com/posters/yaml.pdf',301);
+INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('poster','/s/VoLTE-IMS-Course-Outline.pdf','https://static.alta3.com/outlines/volte/volte.pdf',301);
+INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('poster','/s/vim-t4xp.pdf','https://static.alta3.com/posters/vim.pdf',301);
 INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('poster','/poster','https://blog.alta3.com/posters/',301);
 INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('poster','/poster/','https://blog.alta3.com/posters/',301);
 INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('poster','/poster/*','https://blog.alta3.com/posters/',301);

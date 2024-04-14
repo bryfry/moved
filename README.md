@@ -116,7 +116,8 @@ yq -r -j '.redirects[] | .old, " ", .new, "\n"' < source/redirects.yaml \
 ```bash
 sqlite3 moved.db 'select dst from redir where dst like "%blog.alta3.com%";' \
   | sort -u \
-  | xargs -I {} curl {} -s -o /dev/null -w "%{http_code} %{url} %{redirect_url}\n"
+  | xargs -P0 -I {} curl {} -s -o /dev/null -w "%{http_code} %{url} %{redirect_url}\n" \
+  > test/blog.txt
 ```
 
 #### test all non-blog
@@ -125,7 +126,8 @@ sqlite3 moved.db 'select dst from redir where dst like "%blog.alta3.com%";' \
 sqlite3 moved.db 'select dst from redir where dst like "%https://%";' \
   | sort -u \
   | grep -v "blog.alta3.com" \
-  | xargs -I {} curl {} -s -o /dev/null -w "%{http_code} %{url} %{redirect_url}\n"
+  | xargs -P0 -I {} curl {} -s -o /dev/null -w "%{http_code} %{url} %{redirect_url}\n" \
+  > test/domains.txt
 ```
 
 #### test all relative paths
@@ -134,5 +136,6 @@ sqlite3 moved.db 'select dst from redir where dst like "%https://%";' \
 sqlite3 moved.db 'select dst from redir;' \
   | sort -u \
   | grep -v "https://" \
-  | xargs -I {} curl https://wwww.alpha.alta3.com{} -s -o /dev/null -w "%{http_code} %{url} %{redirect_url}\n"
+  | xargs -I {} curl https://wwww.alpha.alta3.com{} -s -o /dev/null -w "%{http_code} %{url} %{redirect_url}\n" \
+  > test/relative.txt
 ```
