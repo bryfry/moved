@@ -164,7 +164,7 @@ INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('blog-tag','/blog/
 INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('blog-tag','/blog/tag/#python','https://blog.alta3.com/tags/python', 301);
 INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('blog-tag','/blog/tag/#programmng','https://blog.alta3.com/tags/programming', 301);
 INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('blog-tag','/blog/tag/private%20key','https://blog.alta3.com/tags/id_rsa', 301);
-INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('blog-tag','/blog/tag/online%20ansible training','https://blog.alta3.com/tags/ansible', 301);
+INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('blog-tag','/blog/tag/online%20ansible%20training','https://blog.alta3.com/tags/ansible', 301);
 INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('blog-tag','/blog/tag/Network%20Objects','https://blog.alta3.com/tags/network', 301);
 INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('blog-tag','/blog/tag/linux%20tutorial','https://blog.alta3.com/tags/linux', 301);
 INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('blog-tag','/blog/tag/kubernetes%20tutorial','https://blog.alta3.com/tags/kubernetes', 301);
@@ -177,13 +177,12 @@ INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('blog-tag','/blog/
 INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('blog-tag','/blog/tag/Ansible%20Tutorial','https://blog.alta3.com/tags/ansible', 301);
 INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('blog-tag','/blog/tag/ansible%20tutorial','https://blog.alta3.com/tags/ansible', 301);
 INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('blog-tag','/blog/tag/ansible%20training','https://blog.alta3.com/tags/ansible', 301);
-INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('blog-tag','/blog/tag/ansible%20template module','https://blog.alta3.com/tags/ansible', 301);
+INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('blog-tag','/blog/tag/ansible%20template%20module','https://blog.alta3.com/tags/ansible', 301);
 INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('blog-tag','/blog/tag/ansible%20template','https://blog.alta3.com/tags/ansible', 301);
 INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('blog-tag','/blog/tag/ansible%20inventory','https://blog.alta3.com/tags/ansible', 301);
 INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('blog-tag','/blog/tag/ansible%20hosts','https://blog.alta3.com/tags/ansible', 301);
-INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('blog-tag','/blog/tag/ansible%20eos banner','https://blog.alta3.com/tags/eos', 301);
+INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('blog-tag','/blog/tag/ansible%20eos%20banner','https://blog.alta3.com/tags/eos', 301);
 INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('blog-tag','/blog/tag/ansible%20certification','https://blog.alta3.com/tags/ansible', 301);
-
 
 -- blog category
 INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('blog-tag','/blog/category/youtube','https://blog.alta3.com/tags/youtube',301);

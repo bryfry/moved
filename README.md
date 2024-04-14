@@ -19,6 +19,7 @@
 
 ## References
 
+- https://developers.google.com/search/docs/crawling-indexing/301-redirects
 - https://caddyserver.com/docs/caddyfile/directives/redir
 - https://caddyserver.com/docs/caddyfile/directives/import
 
