@@ -265,14 +265,14 @@
 /certification/cf1f998c-92e7-437f-a1dd-80fb1e70ee87.pdf
 /certificates
 /blog/tag/youtube
-/blog/tag/windows subsystem
+/blog/tag/windows%20subsystem
 /blog/tag/windows
 /blog/tag/webinar
 /blog/tag/vm
-/blog/tag/virtual machines
-/blog/tag/virtual machine
+/blog/tag/virtual%20machines
+/blog/tag/virtual%20machine
 /blog/tag/virtualbox
-/blog/tag/virtual box
+/blog/tag/virtual%20box
 /blog/tag/vim
 /blog/tag/versions
 /blog/tag/vcs
@@ -280,29 +280,29 @@
 /blog/tag/tutorial
 /blog/tag/show
 /blog/tag/roles
-/blog/tag/Restful API
+/blog/tag/Restful%20API
 /blog/tag/requests
-/blog/tag/python training
-/blog/tag/python programming
+/blog/tag/python%20training
+/blog/tag/python%20programming
 /blog/tag/python
 /blog/tag/#python
 /blog/tag/#programmng
-/blog/tag/private key
+/blog/tag/private%20key
 /blog/tag/powershell
 /blog/tag/playlist
 /blog/tag/playbooks
-/blog/tag/online ansible training
-/blog/tag/Network Objects
+/blog/tag/online%20ansible%20training
+/blog/tag/Network%20Objects
 /blog/tag/nasa
-/blog/tag/linux tutorial
-/blog/tag/kubernetes tutorial
-/blog/tag/kubernetes training
-/blog/tag/kubernetes cluster
+/blog/tag/linux%20tutorial
+/blog/tag/kubernetes%20tutorial
+/blog/tag/kubernetes%20training
+/blog/tag/kubernetes%20cluster
 /blog/tag/keygen
-/blog/tag/key gen
+/blog/tag/key%20gen
 /blog/tag/k8s
 /blog/tag/jinja2
-/blog/tag/installing kubernetes
+/blog/tag/installing%20kubernetes
 /blog/tag/Init
 /blog/tag/InfoBlox
 /blog/tag/id_rsa.pub
@@ -310,22 +310,22 @@
 /blog/tag/icmp
 /blog/tag/http
 /blog/tag/html
-/blog/tag/github keys
+/blog/tag/github%20keys
 /blog/tag/dsnmasq
 /blog/tag/curl
 /blog/tag/back-up
 /blog/tag/automation
-/blog/tag/api design
+/blog/tag/api%20design
 /blog/tag/api
-/blog/tag/Ansible Tutorial
-/blog/tag/ansible tutorial
-/blog/tag/ansible training
-/blog/tag/ansible template module
-/blog/tag/ansible template
-/blog/tag/ansible inventory
-/blog/tag/ansible hosts
-/blog/tag/ansible eos banner
-/blog/tag/ansible certification
+/blog/tag/Ansible%20Tutorial
+/blog/tag/ansible%20tutorial
+/blog/tag/ansible%20training
+/blog/tag/ansible%20template%20module
+/blog/tag/ansible%20template
+/blog/tag/ansible%20inventory
+/blog/tag/ansible%20hosts
+/blog/tag/ansible%20eos%20banner
+/blog/tag/ansible%20certification
 /blog/diagnosing-a-slow-network
 /blog/category/youtube
 /blog/category/videos
