@@ -899,8 +899,10 @@ INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('poster','/static/
 INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('poster','/static/posters/vim.pdf','https://static.alta3.com/posters/vim.pdf', 301);
 INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('poster','/static/posters/yaml.pdf','https://static.alta3.com/posters/yaml.pdf', 301);
 INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('poster','/poster','https://blog.alta3.com/posters', 301);
+INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('poster','/poster/','https://blog.alta3.com/posters', 301);
 INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('poster','/poster/*','https://blog.alta3.com/posters', 301);
 INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('poster','/posters','https://blog.alta3.com/posters', 301);
+INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('poster','/posters/','https://blog.alta3.com/posters', 301);
 INSERT OR REPLACE INTO redir (type, src, dst, status) VALUES ('poster','/posters/*','https://blog.alta3.com/posters', 301);
 
 -- to other domains
