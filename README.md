@@ -6,7 +6,7 @@
   - [x] squarespace redirects
   - [x] google analytics 
   - [x] blog moved files (redirect.yaml)
-  - [ ] google search console
+  - [x] google search console
 - [x] blog.alta3.com needs tags or catigories
   - currently using 302 for:
   - /blog/tag/* -> blog.alta3.com
@@ -46,7 +46,8 @@ sqlite3 moved.db \
     'select * FROM redir' \
     | jq -j -r '
       .[] 
-      | "redir ", .src, .dst, .status, "\n"'
+      | "redir ", .src, " ", .dst, " ", .status, "\n"' \
+    > artifacts/alta3.com_redir.caddyfile
 ```
 
 #### squarespace sitemap
@@ -106,4 +107,32 @@ sqlite3 moved.db 'select src from redir where dst is NULL' > no_redirect/google_
 # find the new path inside the blogs dir
 yq -r -j '.redirects[] | .old, " ", .new, "\n"' < source/redirects.yaml \
   | xargs -n2 bash -c 'echo -n "$0 "; find . -type f -name $1.md' > blogs.txt
+```
+
+## Testing
+
+#### test all blog dst links
+
+```bash
+sqlite3 moved.db 'select dst from redir where dst like "%blog.alta3.com%";' \
+  | sort -u \
+  | xargs -I {} curl {} -s -o /dev/null -w "%{http_code} %{url} %{redirect_url}\n"
+```
+
+#### test all non-blog
+
+```bash
+sqlite3 moved.db 'select dst from redir where dst like "%https://%";' \
+  | sort -u \
+  | grep -v "blog.alta3.com" \
+  | xargs -I {} curl {} -s -o /dev/null -w "%{http_code} %{url} %{redirect_url}\n"
+```
+
+#### test all relative paths
+
+```bash
+sqlite3 moved.db 'select dst from redir;' \
+  | sort -u \
+  | grep -v "https://" \
+  | xargs -I {} curl https://wwww.alpha.alta3.com{} -s -o /dev/null -w "%{http_code} %{url} %{redirect_url}\n"
 ```
